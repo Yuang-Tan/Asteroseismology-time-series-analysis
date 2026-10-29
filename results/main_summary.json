@@ -1,0 +1,182 @@
+{
+  "analysis": "Main note: harmonic spectra, solar peak shapes, Procyon weights and observing gaps",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "matplotlib": "3.10.8",
+  "elapsed_seconds": 45.405465724999885,
+  "data_summary": [
+    {
+      "dataset": "Sun (GOLF)",
+      "points": 32400,
+      "span_days": 29.999100000000002,
+      "columns": 2
+    },
+    {
+      "dataset": "Procyon (multisite)",
+      "points": 22529,
+      "span_days": 25.024399000000003,
+      "columns": 4
+    }
+  ],
+  "harmonic_verification": [
+    {
+      "test": "frequency",
+      "input": 800.0,
+      "measured": 800.0,
+      "expected": 800.0,
+      "unit": "microHz"
+    },
+    {
+      "test": "frequency",
+      "input": 1600.0,
+      "measured": 1600.0,
+      "expected": 1600.0,
+      "unit": "microHz"
+    },
+    {
+      "test": "frequency",
+      "input": 2400.0,
+      "measured": 2400.0,
+      "expected": 2400.0,
+      "unit": "microHz"
+    },
+    {
+      "test": "amplitude squared",
+      "input": 0.5,
+      "measured": 0.24999999999999611,
+      "expected": 0.25,
+      "unit": "power"
+    },
+    {
+      "test": "amplitude squared",
+      "input": 1.0,
+      "measured": 0.9999999999999845,
+      "expected": 1.0,
+      "unit": "power"
+    },
+    {
+      "test": "amplitude squared",
+      "input": 2.0,
+      "measured": 3.999999999999938,
+      "expected": 4.0,
+      "unit": "power"
+    },
+    {
+      "test": "duration / FWHM",
+      "input": 1,
+      "measured": 10.26636347878228,
+      "expected": 10.253472222222221,
+      "unit": "microHz"
+    },
+    {
+      "test": "duration / FWHM",
+      "input": 2,
+      "measured": 5.126032421386533,
+      "expected": 5.126736111111111,
+      "unit": "microHz"
+    },
+    {
+      "test": "duration / FWHM",
+      "input": 4,
+      "measured": 2.5636907889952996,
+      "expected": 2.5633680555555554,
+      "unit": "microHz"
+    }
+  ],
+  "solar_resolution_microHz": 0.38581404355710913,
+  "procyon_mean_noise_amplitude_reduction": 0.4178628425798463,
+  "max_synthetic_width_relative_error": 0.0012572576665415003,
+  "max_gap_first_minimum_absolute_error_microHz": 9.259228642388706e-05,
+  "solar_shapes": [
+    {
+      "peak_microHz": 2963.8,
+      "peak_amplitude_m_per_s": 0.28293830080006294,
+      "observed_wing_fraction": 0.2951076429630248,
+      "coherent_wing_fraction": 0.05101995146063029
+    },
+    {
+      "peak_microHz": 3097.86,
+      "peak_amplitude_m_per_s": 0.30133857938091824,
+      "observed_wing_fraction": 0.37906082768914123,
+      "coherent_wing_fraction": 0.0510199592759053
+    },
+    {
+      "peak_microHz": 3232.82,
+      "peak_amplitude_m_per_s": 0.2688915185915952,
+      "observed_wing_fraction": 0.3460048785674682,
+      "coherent_wing_fraction": 0.05102032029981414
+    }
+  ],
+  "procyon_weight_comparison": [
+    {
+      "scheme": "Equal weights",
+      "mean_noise_amplitude_m_per_s": 0.04338229815076186,
+      "mean_noise_power_m2_per_s2": 0.002422098064473621,
+      "window_FWHM_microHz": 0.662170424310909,
+      "daily_alias_relative_power": 0.10541325456270907
+    },
+    {
+      "scheme": "SNR weights",
+      "mean_noise_amplitude_m_per_s": 0.025254447727838098,
+      "mean_noise_power_m2_per_s2": 0.0008254408392700299,
+      "window_FWHM_microHz": 1.01925112904379,
+      "daily_alias_relative_power": 0.3651751941966912
+    }
+  ],
+  "gap_results": [
+    {
+      "case": "Single segment",
+      "points": 720,
+      "first_minimum_microHz": 11.574120372535798,
+      "predicted_minimum_microHz": 11.574074074074074,
+      "largest_outer_peak_power": 0.04719221088123604,
+      "window_FWHM_microHz": 10.253407866093205,
+      "outer_search_half_width_microHz": 35.0
+    },
+    {
+      "case": "Gap = 0 D",
+      "points": 1440,
+      "first_minimum_microHz": 5.787129629323461,
+      "predicted_minimum_microHz": 5.787037037037037,
+      "largest_outer_peak_power": 0.047189555118227686,
+      "window_FWHM_microHz": 5.126703202750241,
+      "outer_search_half_width_microHz": 35.0
+    },
+    {
+      "case": "Gap = 0.5 D",
+      "points": 1440,
+      "first_minimum_microHz": 3.8580616284411744,
+      "predicted_minimum_microHz": 3.8580246913580245,
+      "largest_outer_peak_power": 0.23968007361857913,
+      "window_FWHM_microHz": 3.646981668081592,
+      "outer_search_half_width_microHz": 35.0
+    },
+    {
+      "case": "Gap = 1 D",
+      "points": 1440,
+      "first_minimum_microHz": 2.893558258711394,
+      "predicted_minimum_microHz": 2.8935185185185186,
+      "largest_outer_peak_power": 0.44240715594377145,
+      "window_FWHM_microHz": 2.80205950721232,
+      "outer_search_half_width_microHz": 35.0
+    },
+    {
+      "case": "Gap = 2 D",
+      "points": 1440,
+      "first_minimum_microHz": 1.9290289924431623,
+      "predicted_minimum_microHz": 1.9290123456790123,
+      "largest_outer_peak_power": 0.6942989077208914,
+      "window_FWHM_microHz": 1.9013864062021697,
+      "outer_search_half_width_microHz": 35.0
+    },
+    {
+      "case": "Gap = 4 D",
+      "points": 1440,
+      "first_minimum_microHz": 1.157422737948964,
+      "predicted_minimum_microHz": 1.1574074074074074,
+      "largest_outer_peak_power": 0.8766328164802197,
+      "window_FWHM_microHz": 1.1513791670960778,
+      "outer_search_half_width_microHz": 35.0
+    }
+  ]
+}

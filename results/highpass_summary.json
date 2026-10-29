@@ -1,0 +1,76 @@
+{
+  "extra_idea": "Lecture 1 p.65 idea 2: Sun/GOLF high-pass comparison",
+  "method": "Original timestamps; normalized Gaussian smoothing with trapezoidal time-integration weights, then subtraction.",
+  "cutoff_definition": "High-pass amplitude H(fc)=1/sqrt(2), i.e. -3.0103 dB; H(f)=1-exp(-2*pi^2*sigma^2*f^2).",
+  "cutoffs_microHz": [
+    20.0,
+    100.0,
+    1000.0
+  ],
+  "sigma_seconds": [
+    12470.819011509155,
+    2494.163802301831,
+    249.4163802301831
+  ],
+  "kernel_truncate_sigma": 5.0,
+  "common_edge_exclusion_seconds": 62354.095057545775,
+  "original_samples": 32400,
+  "retained_samples": 30840,
+  "removed_samples": 1560,
+  "retained_span_days": 28.554700000000004,
+  "frequency_grid_microHz": {
+    "min": 2.0,
+    "max": 4500.0,
+    "step": 1.0,
+    "count": 4499
+  },
+  "gain_checks": [
+    {
+      "cutoff_microHz": 20.0,
+      "measured_cutoff_amplitude_gain": 0.7071064680480222,
+      "expected_cutoff_amplitude_gain": 0.7071067811865475
+    },
+    {
+      "cutoff_microHz": 100.0,
+      "measured_cutoff_amplitude_gain": 0.7071064575892057,
+      "expected_cutoff_amplitude_gain": 0.7071067811865475
+    },
+    {
+      "cutoff_microHz": 1000.0,
+      "measured_cutoff_amplitude_gain": 0.7071046941735389,
+      "expected_cutoff_amplitude_gain": 0.7071067811865475
+    }
+  ],
+  "comparison": [
+    {
+      "scheme": "Unfiltered",
+      "cutoff_microHz": null,
+      "low_2_20_uhz_power_ratio": 1.0,
+      "low_20_100_uhz_power_ratio": 1.0,
+      "oscillation_2000_4500_uhz_power_ratio": 1.0
+    },
+    {
+      "scheme": "0.02 mHz high-pass",
+      "cutoff_microHz": 20.0,
+      "low_2_20_uhz_power_ratio": 0.0406980460442896,
+      "low_20_100_uhz_power_ratio": 0.905908412750162,
+      "oscillation_2000_4500_uhz_power_ratio": 0.9938811548451291
+    },
+    {
+      "scheme": "0.1 mHz high-pass",
+      "cutoff_microHz": 100.0,
+      "low_2_20_uhz_power_ratio": 0.000230869452059416,
+      "low_20_100_uhz_power_ratio": 0.10043316633790486,
+      "oscillation_2000_4500_uhz_power_ratio": 0.9936862707977663
+    },
+    {
+      "scheme": "1 mHz high-pass",
+      "cutoff_microHz": 1000.0,
+      "low_2_20_uhz_power_ratio": 7.857287291172823e-05,
+      "low_20_100_uhz_power_ratio": 0.0005405840630228612,
+      "oscillation_2000_4500_uhz_power_ratio": 0.9939461612104128
+    }
+  ],
+  "limitations": "The response is a continuous, infinite-record approximation. The finite-kernel, nearly regular data were checked at the actual timestamps. Common boundary trimming changes the observing window. Band power ratios are descriptive sums of sampled amplitude-squared spectra, not PSD integrals, physical variances, or formal detection significances.",
+  "elapsed_seconds": 15.375847234000048
+}

@@ -1,0 +1,82 @@
+{
+  "directory_url": "https://www.physics.usyd.edu.au/~stello/timeseries/",
+  "datasets": [
+    {
+      "filename": "Procyon-Multisite-SolarLike_TimeInDays_VelocityInMetrePerSecond_WeightSNRoptimised_WeightWindowOptimise.txt",
+      "source_url": "https://www.physics.usyd.edu.au/~stello/timeseries/Procyon-Multisite-SolarLike_TimeInDays_VelocityInMetrePerSecond_WeightSNRoptimised_WeightWindowOptimise.txt",
+      "sha256": "f1ec8a254b52c2b42b35aba467130147976fc63274dcebbdfc083c0cc0ad8db2",
+      "columns": [
+        {
+          "name": "time",
+          "unit": "day"
+        },
+        {
+          "name": "radial_velocity",
+          "unit": "m/s"
+        },
+        {
+          "name": "snr_optimised_weight",
+          "unit": "relative statistical weight"
+        },
+        {
+          "name": "window_optimised_weight",
+          "unit": "relative statistical weight"
+        }
+      ],
+      "dataset_label": "Procyon (multisite)"
+    },
+    {
+      "filename": "Sun-GOLF-SolarLike_TimeInDays_VelocityInMetrePerSecond.txt",
+      "source_url": "https://www.physics.usyd.edu.au/~stello/timeseries/Sun-GOLF-SolarLike_TimeInDays_VelocityInMetrePerSecond.txt",
+      "sha256": "ae6517de1b44f778d56e9e7517f8fe697cb5b4252f7a5fee674e9945ee209a59",
+      "columns": [
+        {
+          "name": "time",
+          "unit": "day"
+        },
+        {
+          "name": "radial_velocity",
+          "unit": "m/s"
+        }
+      ],
+      "dataset_label": "Sun (GOLF)"
+    },
+    {
+      "filename": "star03-Kepler-DeltaScuti_TimeInDays_PhotometryInPpm.txt",
+      "source_url": "https://www.physics.usyd.edu.au/~stello/timeseries/star03-Kepler-DeltaScuti_TimeInDays_PhotometryInPpm.txt",
+      "sha256": "5ed21f63a4e2172ee0bb8975196e5b05374d87a9ab129a7856ba69ce3cd7ed1e",
+      "columns": [
+        {
+          "name": "time",
+          "unit": "day"
+        },
+        {
+          "name": "photometry",
+          "unit": "ppm"
+        }
+      ],
+      "dataset_label": "star03 (Kepler delta Scuti)"
+    },
+    {
+      "filename": "46LMi-SONG-RedGiant_TimeInDays_VelocityInMetrePerSecond_Scatter.txt",
+      "source_url": "https://www.physics.usyd.edu.au/~stello/timeseries/46LMi-SONG-RedGiant_TimeInDays_VelocityInMetrePerSecond_Scatter.txt",
+      "sha256": "533473a811274eda1982ce19518b9a1cece622952ce8e957106dd92266125d8c",
+      "columns": [
+        {
+          "name": "time",
+          "unit": "day"
+        },
+        {
+          "name": "radial_velocity",
+          "unit": "m/s"
+        },
+        {
+          "name": "scatter",
+          "unit": "as supplied; absolute velocity-error calibration not stated in filename",
+          "interpretation": "Use relative weights 1/scatter**2 as requested. Separately test, rather than assume, absolute agreement with high-pass noise in m/s."
+        }
+      ],
+      "dataset_label": "46 LMi (SONG)"
+    }
+  ]
+}

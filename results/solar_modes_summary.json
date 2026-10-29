@@ -1,0 +1,136 @@
+{
+  "extra_idea": 3,
+  "source_filename": "Sun-GOLF-SolarLike_TimeInDays_VelocityInMetrePerSecond.txt",
+  "source_sha256": "ae6517de1b44f778d56e9e7517f8fe697cb5b4252f7a5fee674e9945ee209a59",
+  "sample_count": 32400,
+  "span_days": 29.999100000000002,
+  "search_half_width_microHz": 50.0,
+  "coarse_search_step_microHz": 0.2,
+  "peak_selection": "Strongest interior local maximum on the coarse grid, refined within +/-0.25 microHz while constrained to the search interval; boundary shoulders excluded.",
+  "refined_search_step_microHz": 0.01,
+  "band_half_width_microHz": 5.0,
+  "interior_day_range": [
+    1.0,
+    28.999100000000002
+  ],
+  "interior_sample_count": 30240,
+  "method": "Joint constant + sine/cosine least-squares projection on positive k/T frequencies inside the band; T=N times mean observed spacing. Return only the harmonic model.",
+  "relation_to_lecture": "Harmonic reconstruction using a joint finite-band fit; not the oversampled independent-coefficient/window-area normalization formula.",
+  "bands": [
+    {
+      "nominal_microHz": 2000.0,
+      "selected_peak_microHz": 2020.3000000000002,
+      "period_seconds": 494.9759936643072,
+      "period_minutes": 8.24959989440512,
+      "lower_microHz": 2015.3000000000002,
+      "upper_microHz": 2025.3000000000002,
+      "frequency_spacing_microHz": 0.38580213571625865,
+      "harmonic_components": 26,
+      "full_record_rms_m_per_s": 0.03829116223079275,
+      "interior_rms_m_per_s": 0.039374694501008015,
+      "interior_daily_rms_min_m_per_s": 0.01443707384372234,
+      "interior_daily_rms_max_m_per_s": 0.06268840646284632,
+      "design_condition_number": 1.4142479239420302
+    },
+    {
+      "nominal_microHz": 3000.0,
+      "selected_peak_microHz": 2963.8,
+      "period_seconds": 337.4046831770025,
+      "period_minutes": 5.623411386283375,
+      "lower_microHz": 2958.8,
+      "upper_microHz": 2968.8,
+      "frequency_spacing_microHz": 0.38580213571625865,
+      "harmonic_components": 26,
+      "full_record_rms_m_per_s": 0.24475065217089226,
+      "interior_rms_m_per_s": 0.24279475315924784,
+      "interior_daily_rms_min_m_per_s": 0.061014237092244364,
+      "interior_daily_rms_max_m_per_s": 0.48432619359086126,
+      "design_condition_number": 1.4142555092712805
+    },
+    {
+      "nominal_microHz": 4000.0,
+      "selected_peak_microHz": 3984.1,
+      "period_seconds": 250.99771592078514,
+      "period_minutes": 4.183295265346419,
+      "lower_microHz": 3979.1,
+      "upper_microHz": 3989.1,
+      "frequency_spacing_microHz": 0.38580213571625865,
+      "harmonic_components": 26,
+      "full_record_rms_m_per_s": 0.09490571825903317,
+      "interior_rms_m_per_s": 0.09457263897809447,
+      "interior_daily_rms_min_m_per_s": 0.03129855009914044,
+      "interior_daily_rms_max_m_per_s": 0.16333103976076233,
+      "design_condition_number": 1.4142657304983517
+    }
+  ],
+  "injection_checks": [
+    {
+      "nominal_microHz": 2000.0,
+      "position": "centre",
+      "injected_microHz": 2020.3000000000002,
+      "full_record_rms_gain": 0.9932782996793116,
+      "interior_fitted_amplitude_gain": 1.0033317312669492
+    },
+    {
+      "nominal_microHz": 2000.0,
+      "position": "upper_edge",
+      "injected_microHz": 2025.3000000000002,
+      "full_record_rms_gain": 0.5987652167178906,
+      "interior_fitted_amplitude_gain": 0.37424973520374455
+    },
+    {
+      "nominal_microHz": 2000.0,
+      "position": "outside_band",
+      "injected_microHz": 2050.3,
+      "full_record_rms_gain": 0.019780047717805917,
+      "interior_fitted_amplitude_gain": 8.178001376662073e-05
+    },
+    {
+      "nominal_microHz": 3000.0,
+      "position": "centre",
+      "injected_microHz": 2963.8,
+      "full_record_rms_gain": 0.9978430147774693,
+      "interior_fitted_amplitude_gain": 1.0011391795594695
+    },
+    {
+      "nominal_microHz": 3000.0,
+      "position": "upper_edge",
+      "injected_microHz": 2968.8,
+      "full_record_rms_gain": 0.9816301304737806,
+      "interior_fitted_amplitude_gain": 0.9435599773811798
+    },
+    {
+      "nominal_microHz": 3000.0,
+      "position": "outside_band",
+      "injected_microHz": 2993.8,
+      "full_record_rms_gain": 0.004258864297645481,
+      "interior_fitted_amplitude_gain": 1.1220391644761373e-06
+    },
+    {
+      "nominal_microHz": 4000.0,
+      "position": "centre",
+      "injected_microHz": 3984.1,
+      "full_record_rms_gain": 0.9972127391738923,
+      "interior_fitted_amplitude_gain": 1.0014535934535589
+    },
+    {
+      "nominal_microHz": 4000.0,
+      "position": "upper_edge",
+      "injected_microHz": 3989.1,
+      "full_record_rms_gain": 0.3470513921556642,
+      "interior_fitted_amplitude_gain": 0.14840558695660863
+    },
+    {
+      "nominal_microHz": 4000.0,
+      "position": "outside_band",
+      "injected_microHz": 4014.1,
+      "full_record_rms_gain": 0.020855323890778016,
+      "interior_fitted_amplitude_gain": 8.353871867295216e-05
+    }
+  ],
+  "rms_ratio_3_to_2": 6.166263795469757,
+  "rms_ratio_3_to_4": 2.5672832627149758,
+  "figure_note": "Same physical vertical scale within each column. Curves densely evaluate fitted models for display; dots and all statistics use original timestamps. Shaded endpoint days are omitted from the interior statistics.",
+  "limitations": "Finite-record band projection has leakage and non-sharp edges. A 10 microHz band can contain multiple nearby components; selecting a spectral peak does not establish a unique physical eigenmode. Variations in daily RMS can arise from beating, noise or finite coherence. Endpoint exclusion is descriptive, not proof of zero edge bias. No individual mode lifetime is inferred.",
+  "elapsed_seconds": 2.7652796979998584
+}
