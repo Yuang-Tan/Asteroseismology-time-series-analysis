@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+data/raw/
+data/synthetic.csv
+results/*.csv
+figures/09_solar_clean_modes_power.png
